@@ -1,0 +1,514 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fontes*/
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/Fontes/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('/Fontes/Kanit/Kanit-Bold.ttf') format('truetype')
+  }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*Estilos Gerais*/
+header {
+    background-color: #f70707;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nomeFarmacia {
+    font-size: 30px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.botoesMenu {
+    font-size: 18px;
+}
+
+.botoesMenu:hover {
+    font-size: 20px;
+    font-style: initial;
+}
+
+.linhaUnica {
+    width: calc(100% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.iconesOpcoes {
+    width: 105px;
+}
+
+/*PRODUTOS*/
+.produto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.zoomImagem:hover {
+    width: 25em;
+}
+
+.titulo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 2em;
+    color: black;
+}
+
+.tituloAgradecimento {
+    font-family: 'Kanit', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    color: black;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+.product img {
+    max-width: 100%;
+}
+
+.espacodescricao {
+    margin-top: 1em;
+}
+
+.espacodescricao2 {
+    margin-top: 3em;
+}
+
+.preco {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #c405b4;
+}
+
+.botao-comprar {
+    background-color: #0646f5;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao-comprar:hover {
+    background-color: #2ef806;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f70707;
+    font-size: 10px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagemFooter {
+    width: 50px;
+}
+
+.imagemFooter:hover {
+    width: 150px;
+}
+
+/*HOME*/
+.opcoes {
+    width: calc(33.33% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: #0646f5;
+}
+
+.sobreNos {
+    width: calc(100% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.descricaoSobreNos {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+.missaoVisaoValores {
+    width: calc(50% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.logoHistoria {
+    margin-top: 3em;
+    width: 120px;
+}
+
+.imagemHome {
+    margin-top: 6em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.barraPreta {
+    background-color: red;
+    color: red;
+    width: 100%;
+}
+
+/*MANIPULADOS*/
+.manipulados {
+    width: calc(50% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botaoEnviarReceita {
+    background-color: #0646f5;
+    color: #fff;
+    margin-top: 2em;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botaoEnviarReceita:hover {
+    background-color: #2ef806;
+    border-radius: 10px;
+}
+
+.imagemManupulacao {
+    border-radius: 10px;
+    width: 450px;
+}
+
+.opcoesRemedios {
+    width: calc(20% - 20px);
+    margin-bottom: 80px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: #0646f5;
+}
+
+/*PRODUTOS*/
+.direito-inferior{ 
+    position:absolute;
+    background-image:url(imagens/direito-inferior.png);
+    float:right;
+    width:262px;
+    height:261px; 
+    bottom:0;
+}
+
+.container_form {
+
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background:#ffffff; 
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    border-radius: 10px; 
+    padding:1em;
+    color: black;
+
+}
+
+.container_form h1 {
+    
+    font-family:'open_sansregular';
+    font-size: 2.3em;
+    color: #00dae0;
+    border-bottom: 1px #f0eded solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.form_grupo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form_grupo .legenda { 
+
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/*FORMULÁRIO DE CADASTRO*/
+
+.submit { width:100%; float:left; }
+
+.bgCadastro {
+    background-color: red;
+}
+
+.botao-Cadastrar {
+    background-color: #991700;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.botao-Cadastrar:hover {
+    background-color: #0646f5;
+    border-radius: 10px;
+}
+
+.tituloForms {
+    font-family: 'Kanit', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.submit_btn {
+
+    float: left;
+    display: block;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #991700;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 25px;
+    font-family:'open_sansregular';
+    border-radius: 6px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit_btn:hover {
+
+    background-color: #444444;
+    transform: scale(1.03);
+
+}
+
+.dropdown {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: inherit;
+    color: #222222;
+    border-radius: 4px;
+    border: 1px #f2f2f2 solid;
+    background: #fdfdfd;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.form_new_input {
+    display: none;
+}
+
+.radio_label,
+.check_label {
+
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-bottom: 8px;
+
+}
+
+
+.radio_new_btn {
+
+    position: absolute;
+    left: 0;
+    transform: translateY(3px);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.2em solid #4c4c4c;
+
+}
+
+.radio_new_btn::after {
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #991700;
+    visibility: hidden;
+
+}
+
+.check_new_btn {
+
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 0.2em solid #4c4c4c;
+
+}
+
+.check_new_btn::after {
+
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #991700;
+    visibility: hidden;
+
+}
+
+.form_new_input:checked ~ .radio_label .radio_new_btn::after,
+.form_new_input:checked ~ .check_label .check_new_btn::after {
+ 
+    visibility: visible;
+}
+
+.form_new_input:checked ~ .radio_label,
+.form_new_input:checked ~ .check_label {
+    color: #6d0d0a;
+}
+
+
+.form_grupo {
+
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form_input {
+
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px #f2f2f2 solid;
+    background: #fdfdfd;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+
+}
+
+.form_message,
+.form_message .message_input {
+
+    width: 100%;
+    float:left;
+
+}
+
+.form_message_label {
+
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
